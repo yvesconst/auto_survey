@@ -30,7 +30,7 @@ from transformers import (
 
 
 
-outfile = "./dataset/qg_dataset.csv"
+outfile = "./dataset/train.csv"
 
 piaf_dataset_train = load_dataset('piaf', split="train").to_pandas()
 fquad_dataset_train = load_dataset('./dataset/fsquad', data_files={'train': 'train.json', 'validation': 'valid.json'}, field="data", split="train")
